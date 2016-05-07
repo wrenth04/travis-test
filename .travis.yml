@@ -1,12 +1,15 @@
 language: node_js
 node_js:
-  - "0.10"
-  - "0.12"
-  - "4"
-  - "5"
+- '0.10'
+- '0.12'
+- '4'
+- '5'
 before_install:
-  - npm install -q -g browserify mocha
+- npm install -q -g browserify mocha
 script:
-  - npm test
-  - npm run build
-
+- echo $TOKEN
+- npm test
+- npm run build
+env:
+  matrix:
+    secure: soWMcyrr0+V7Jwfrrw23VsbJf5XNhQE2cJ70pSK1b3GXYQ2WDVVpA96SAVAn/3fknZB1DkbOafhJE+viYgHKfMBcZT8+9SszmTgxbHNCiuae3GmevBTTGm7qENXyGvjjpBjxAI1QH9ST4Et4PeowPHhRu0NhT8flSLacjbIg9oGDIQ2am1105BqVpB8BRrAAJXuKTZiI9wvYACYlDZh8tLU5Q99XuO58HjeZA4Ycw0Z2TlN9dlxDEPv/T54gGDOMNJGE/4+ol/a2mVKRt4aPrjSulM4/QAoEXRy/TE7Ypt3dcYRFv6w2Fodn3MLn5j6QNHfINCI0zhDhUsAuGZxhQ91gMMVQwOEJsa5e6a5DEaYIhK16e9oZxyfZcSgv/h3GbiUutOzH3ZhpexADirLtlpfjJxidsDTjrKisBzAxPUhTJEAuPswRPKS8ME2m6STo0Nz2zxOvOEpzZU34m8G6D7yTCrOB2obdRXnJx0u9aSp+AbkQWsV93JBTsYoFdg3bC5Iz92CP3mSV8g7G2KnwdWmtDMpK+fER318QF6Q83MolB6jzc5RN3Ag/E4rVSN++eiaqgZzH/N+LyT7wyPaGUMTmtGek+V2jl+10LExaRy321iNWnBG41unk61YDzB+rZn9C2PSoVKXQIGjzN1eBmRuOiyCzqLuTBdcHiaAzorA=
